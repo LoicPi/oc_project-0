@@ -51,10 +51,16 @@ public class Product {
 		return quantity;
 	}
 
+    /**
+     * Adding a condition to setQuantity for negative values
+     */
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-
+	    if(quantity > 0) {
+        this.quantity = quantity;
+	    } else {
+            this.quantity=0;
+        }
+    }
 	public double getPrice() {
 		return price;
 	}
