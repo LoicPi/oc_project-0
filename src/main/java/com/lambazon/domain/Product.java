@@ -56,7 +56,7 @@ public class Product {
      */
 	public void setQuantity(int quantity) {
 	    if(quantity > 0) {
-        this.quantity = quantity;
+            this.quantity = quantity;
 	    } else {
             this.quantity=0;
         }
@@ -65,8 +65,17 @@ public class Product {
 		return price;
 	}
 
+    /**
+     * Adding conditions to a negative price or above 1000
+     */
 	public void setPrice(double price) {
-		this.price = price;
+		if (price<0) {
+            this.price = 0;
+        } else if (price>1000) {
+            this.price = 1000;
+        } else {
+		    this.price = price;
+		}
 	}
 
     /**
