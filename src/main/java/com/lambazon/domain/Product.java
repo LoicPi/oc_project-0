@@ -81,6 +81,8 @@ public class Product {
     /**
      * Changing the method to return the inventory price
      */
-	public double getInventoryPrice() { return quantity*price; }
+	public double getInventoryPrice() {
+		return quantity*price;
+	}
 
 }

@@ -14,7 +14,10 @@ import com.lambazon.domain.Product;
 public class ProductRepository {
 	
 	private static Map<Integer, Product> products = new HashMap<>();
-	
+
+	/**
+	 * Add two products to the list(LG BL-51YF and Sony DD2.5 1TB)
+	 */
 	private static void generateProductData() {
 		int id=0;
 		products.put(++id, new Product(id, 10, 92.50, "Echo Dot", "(2nd Generation) - Black"));
